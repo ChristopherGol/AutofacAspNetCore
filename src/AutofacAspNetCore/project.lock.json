@@ -3,6 +3,34 @@
   "version": 2,
   "targets": {
     ".NETCoreApp,Version=v1.0": {
+      "Autofac/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "System.ComponentModel": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Autofac.dll": {}
+        }
+      },
+      "Autofac.Framework.DependencyInjection/4.0.0-beta8-157": {
+        "type": "package",
+        "dependencies": {
+          "Autofac": "4.0.0-beta8-157",
+          "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta8"
+        },
+        "compile": {
+          "lib/dotnet/Autofac.Framework.DependencyInjection.dll": {},
+          "lib/dotnet/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/Autofac.Framework.DependencyInjection.dll": {},
+          "lib/dotnet/Autofac.dll": {}
+        }
+      },
       "Libuv/1.9.0": {
         "type": "package",
         "dependencies": {
@@ -1370,6 +1398,25 @@
         },
         "runtime": {
           "lib/netstandard1.0/Microsoft.Extensions.WebEncoders.dll": {}
+        }
+      },
+      "Microsoft.Framework.DependencyInjection.Abstractions/1.0.0-beta8": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel": "4.0.0",
+          "System.Diagnostics.Debug": "4.0.10",
+          "System.Globalization": "4.0.10",
+          "System.Linq": "4.0.0",
+          "System.Linq.Expressions": "4.0.10",
+          "System.Reflection": "4.0.10",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20"
+        },
+        "compile": {
+          "lib/dotnet/Microsoft.Framework.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/Microsoft.Framework.DependencyInjection.Abstractions.dll": {}
         }
       },
       "Microsoft.Net.Http.Headers/1.0.0": {
@@ -3808,6 +3855,40 @@
     }
   },
   "libraries": {
+    "Autofac/4.6.0": {
+      "sha512": "Y+7B007u3cYpjU4THI9/i2pSyRnHjZtRJOrjGiHYPH5C32jJZ5njWjgLVnI6nmsYjUrYcWjXLfB13J3ztd37cw==",
+      "type": "package",
+      "path": "Autofac/4.6.0",
+      "files": [
+        "Autofac.4.6.0.nupkg.sha512",
+        "Autofac.nuspec",
+        "lib/net45/Autofac.dll",
+        "lib/net45/Autofac.xml",
+        "lib/netstandard1.1/Autofac.dll",
+        "lib/netstandard1.1/Autofac.xml"
+      ]
+    },
+    "Autofac.Framework.DependencyInjection/4.0.0-beta8-157": {
+      "sha512": "onkvcXyk76jNxnb9wm50spSoU4l73qsf5PTa+axZXHnpmbA6/onG67jZpUbUDfiYFx8LwnE69KYzrv3UpC4D/g==",
+      "type": "package",
+      "path": "Autofac.Framework.DependencyInjection/4.0.0-beta8-157",
+      "files": [
+        "Autofac.Framework.DependencyInjection.4.0.0-beta8-157.nupkg.sha512",
+        "Autofac.Framework.DependencyInjection.nuspec",
+        "lib/dnx451/Autofac.Framework.DependencyInjection.dll",
+        "lib/dnx451/Autofac.Framework.DependencyInjection.xml",
+        "lib/dnx451/Autofac.dll",
+        "lib/dnx451/Autofac.xml",
+        "lib/dotnet/Autofac.Framework.DependencyInjection.dll",
+        "lib/dotnet/Autofac.Framework.DependencyInjection.xml",
+        "lib/dotnet/Autofac.dll",
+        "lib/dotnet/Autofac.xml",
+        "lib/net45/Autofac.Framework.DependencyInjection.dll",
+        "lib/net45/Autofac.Framework.DependencyInjection.xml",
+        "lib/net45/Autofac.dll",
+        "lib/net45/Autofac.xml"
+      ]
+    },
     "Libuv/1.9.0": {
       "sha512": "9Q7AaqtQhS8JDSIvRBt6ODSLWDBI4c8YxNxyCQemWebBFUtBbc6M5Vi5Gz1ZyIUlTW3rZK9bIr5gnVyv0z7a2Q==",
       "type": "package",
@@ -4848,6 +4929,23 @@
         "Microsoft.Extensions.WebEncoders.nuspec",
         "lib/netstandard1.0/Microsoft.Extensions.WebEncoders.dll",
         "lib/netstandard1.0/Microsoft.Extensions.WebEncoders.xml"
+      ]
+    },
+    "Microsoft.Framework.DependencyInjection.Abstractions/1.0.0-beta8": {
+      "sha512": "7WL9hy+7bYDyBtIrrW5tw57dChBcizjSyuD0p5pVkay+gSseLqvAk72a4KldMmRgH//7t74d/YVrTvLhw83b7w==",
+      "type": "package",
+      "path": "Microsoft.Framework.DependencyInjection.Abstractions/1.0.0-beta8",
+      "files": [
+        "Microsoft.Framework.DependencyInjection.Abstractions.1.0.0-beta8.nupkg.sha512",
+        "Microsoft.Framework.DependencyInjection.Abstractions.nuspec",
+        "lib/dnx451/Microsoft.Framework.DependencyInjection.Abstractions.dll",
+        "lib/dnx451/Microsoft.Framework.DependencyInjection.Abstractions.xml",
+        "lib/dnxcore50/Microsoft.Framework.DependencyInjection.Abstractions.dll",
+        "lib/dnxcore50/Microsoft.Framework.DependencyInjection.Abstractions.xml",
+        "lib/dotnet/Microsoft.Framework.DependencyInjection.Abstractions.dll",
+        "lib/dotnet/Microsoft.Framework.DependencyInjection.Abstractions.xml",
+        "lib/net45/Microsoft.Framework.DependencyInjection.Abstractions.dll",
+        "lib/net45/Microsoft.Framework.DependencyInjection.Abstractions.xml"
       ]
     },
     "Microsoft.Net.Http.Headers/1.0.0": {
@@ -9878,6 +9976,8 @@
   },
   "projectFileDependencyGroups": {
     "": [
+      "Autofac >= 4.6.0",
+      "Autofac.Framework.DependencyInjection >= 4.0.0-beta8-157",
       "Microsoft.AspNetCore.Diagnostics >= 1.0.0",
       "Microsoft.AspNetCore.Mvc >= 1.0.1",
       "Microsoft.AspNetCore.Razor.Tools >= 1.0.0-preview2-final",
